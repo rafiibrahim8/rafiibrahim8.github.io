@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Privacy policy for WiFi File Server — what the App collects, what it shares, and the legal basis for processing." />
+<meta name="author" content="Ibrahim Rafi" />
+<meta name="theme-color" content="#0F1115" />
+<title>Privacy Policy — WiFi File Server</title>
+<link rel="icon" type="image/png" href="assets/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0F1115;
+    --surface: #181B21;
+    --line: #2A2E37;
+    --ink: #ECEDEF;
+    --ink-2: #A8ABB3;
+    --ink-3: #6E727A;
+    --accent: #7395FF;
+    --accent-soft: rgba(115, 149, 255, 0.12);
+    --success: #37C77A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header.site {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 50px;
+  }
+  .site-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand {
+    font-size: 17px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .brand .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--success);
+    box-shadow: 0 0 0 4px rgba(55, 199, 122, 0.18);
+  }
+  .back {
+    color: var(--ink-2); text-decoration: none; font-size: 14px;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .back:hover { color: var(--ink); }
+  .back svg { width: 14px; height: 14px; }
+
+  main { padding-bottom: 80px; }
+  h1 {
+    font-size: clamp(30px, 5vw, 40px);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+  .meta {
+    margin-top: 14px;
+    color: var(--ink-3);
+    font-size: 14px;
+  }
+  .meta strong { color: var(--ink-2); font-weight: 600; }
+
+  h2 {
+    margin-top: 44px;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+  h2 .num {
+    display: inline-block;
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  h3 {
+    margin-top: 22px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  p { margin-top: 12px; color: var(--ink-2); font-size: 15px; }
+  ul, ol { margin-top: 12px; padding-left: 26px; color: var(--ink-2); font-size: 15px; }
+  li { margin-top: 6px; }
+  li::marker { color: var(--ink-3); }
+  a { color: var(--accent); }
+  code, .mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+
+  .callout {
+    margin-top: 22px;
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 16px 18px;
+    border-radius: 4px;
+    color: var(--ink);
+    font-size: 15px;
+  }
+  .callout .label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .toc {
+    margin-top: 26px;
+    padding: 20px 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  .toc-title {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+    font-weight: 700;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .toc ol {
+    margin-top: 0; padding-left: 0; list-style: none;
+    columns: 2; column-gap: 30px;
+  }
+  @media (max-width: 560px) { .toc ol { columns: 1; } }
+  .toc li { margin-top: 4px; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--accent); }
+  .toc .num {
+    color: var(--ink-3);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
+  /* Definitions table */
+  dl.defs {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: minmax(140px, max-content) 1fr;
+    gap: 6px 18px;
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  dl.defs dt {
+    color: var(--ink);
+    font-weight: 600;
+    grid-column: 1;
+  }
+  dl.defs dd { grid-column: 2; }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 30px 0;
+    color: var(--ink-3);
+    font-size: 13px;
+  }
+  .footer-row {
+    display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  }
+  footer.site a { color: var(--ink-2); text-decoration: none; }
+  footer.site a:hover { color: var(--ink); }
+  .footer-links { display: flex; gap: 18px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap site-row">
+    <a href="index.html" class="brand"><span class="dot"></span>WiFi File Server</a>
+    <a href="index.html" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to app
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <strong>Effective Date:</strong> 14 May 2026 &nbsp;·&nbsp;
+      <strong>Last Updated:</strong> 14 May 2026 &nbsp;·&nbsp;
+      <strong>Version:</strong> 1.0
+    </p>
+
+    <div class="callout">
+      <span class="label">Plain-language summary</span>
+      The WiFi File Server application does not collect, transmit, sell, rent, share, or otherwise
+      disclose any personal information about You to the Developer or to any third party. All data
+      generated or processed by the App resides exclusively on Your device or within Your local Wi-Fi
+      network. The following terms are the legally operative version of this commitment. The summary
+      is provided for convenience only; in the event of any conflict between the summary and the
+      operative text below, the operative text controls.
+    </div>
+
+    <div class="toc">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#s1"><span class="num">1.</span>Introduction and Scope</a></li>
+        <li><a href="#s2"><span class="num">2.</span>Definitions</a></li>
+        <li><a href="#s3"><span class="num">3.</span>Information the App Processes</a></li>
+        <li><a href="#s4"><span class="num">4.</span>Information the App Does Not Collect</a></li>
+        <li><a href="#s5"><span class="num">5.</span>Purposes of Processing</a></li>
+        <li><a href="#s6"><span class="num">6.</span>Legal Bases</a></li>
+        <li><a href="#s7"><span class="num">7.</span>Disclosure to Third Parties</a></li>
+        <li><a href="#s8"><span class="num">8.</span>Data Retention &amp; Deletion</a></li>
+        <li><a href="#s9"><span class="num">9.</span>Your Rights</a></li>
+        <li><a href="#s10"><span class="num">10.</span>Android Permissions</a></li>
+        <li><a href="#s11"><span class="num">11.</span>Children's Privacy</a></li>
+        <li><a href="#s12"><span class="num">12.</span>Security</a></li>
+        <li><a href="#s13"><span class="num">13.</span>Open-Source Notice</a></li>
+        <li><a href="#s14"><span class="num">14.</span>Changes to This Policy</a></li>
+        <li><a href="#s15"><span class="num">15.</span>Governing Law &amp; Severability</a></li>
+        <li><a href="#s16"><span class="num">16.</span>Contact</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1"><span class="num">1.</span>Introduction and Scope</h2>
+    <p>
+      This Privacy Policy (the "<strong>Policy</strong>") governs the privacy practices of the Android
+      application known as "WiFi File Server" (package identifier
+      <span class="mono">me.ibrahimrafi.wififileserver</span>) (the "<strong>App</strong>"), published
+      by Ibrahim Rafi (the "<strong>Developer</strong>", "We", "Us", "Our"). It applies to all
+      individuals who install, launch, or otherwise use the App ("<strong>You</strong>",
+      "<strong>Your</strong>", or the "<strong>User</strong>") on a device running the Android operating
+      system. By installing or using the App, You acknowledge that You have read and understood this
+      Policy. If You do not agree with this Policy, do not install or use the App.
+    </p>
+
+    <h2 id="s2"><span class="num">2.</span>Definitions</h2>
+    <dl class="defs">
+      <dt>App</dt>
+      <dd>The "WiFi File Server" Android application as defined in Section 1.</dd>
+      <dt>Device</dt>
+      <dd>The Android-powered device on which You have installed the App.</dd>
+      <dt>Local Network</dt>
+      <dd>The Wi-Fi network to which Your Device is connected and on which the App's server is reachable.</dd>
+      <dt>Personal Data</dt>
+      <dd>Any information relating to an identified or identifiable natural person.</dd>
+      <dt>Service</dt>
+      <dd>The functionality the App makes available, namely a Local Network HTTP file server.</dd>
+      <dt>Third Party</dt>
+      <dd>Any person or organisation other than You and the Developer.</dd>
+    </dl>
+
+    <h2 id="s3"><span class="num">3.</span>Information the App Processes</h2>
+    <p>
+      The App processes only the categories of information described below. All such information is
+      stored exclusively on Your Device and is never transmitted to the Developer or any Third Party
+      by the App.
+    </p>
+    <h3>3.1. Configuration data</h3>
+    <p>
+      The App stores Your configured server preferences (including but not limited to: TCP port,
+      shared folder URI, optional username and password for HTTP Basic Authentication, theme
+      preference, idle-timeout, throughput limits, and feature toggles) in Android's
+      <span class="mono">SharedPreferences</span>, in the App's private storage area.
+    </p>
+    <h3>3.2. Transfer history</h3>
+    <p>
+      The App maintains a record of upload and download transfers performed through the Service,
+      including file names, file sizes, timestamps, peer IP addresses on the Local Network, and
+      throughput metrics. This record is stored as a JSON file in the App's private files directory
+      on the Device and persists across App restarts so that You may consult it. You may clear this
+      record at any time from within the App's "Transfers" tab.
+    </p>
+    <h3>3.3. User content (files)</h3>
+    <p>
+      Files served, uploaded, or otherwise transferred via the Service reside in the folder You select
+      using Android's Storage Access Framework. The App does not copy, index, or transmit those files
+      anywhere other than to the recipient devices on Your Local Network to which You have voluntarily
+      disclosed the App's URL or QR code.
+    </p>
+
+    <h2 id="s4"><span class="num">4.</span>Information the App Does Not Collect</h2>
+    <p>The App does <strong>not</strong> collect, generate, or process any of the following:</p>
+    <ul>
+      <li>Personally identifying information about You (e.g., name, email address, phone number, government identifiers);</li>
+      <li>Account credentials or authentication tokens for any external service;</li>
+      <li>Location data, whether precise or approximate;</li>
+      <li>Contacts, calendar entries, SMS messages, or call history;</li>
+      <li>Device advertising identifiers, hardware identifiers, or persistent device fingerprints;</li>
+      <li>Crash reports, telemetry, analytics events, or usage metrics transmitted off-device;</li>
+      <li>Health, biometric, financial, or other categories of sensitive personal data.</li>
+    </ul>
+    <p>
+      The App contains no advertising libraries, no analytics or crash-reporting Software Development
+      Kits, and no Third-Party network clients that initiate connections to external services.
+    </p>
+
+    <h2 id="s5"><span class="num">5.</span>Purposes of Processing</h2>
+    <p>The limited information described in Section 3 is processed solely for the following purposes:</p>
+    <ul>
+      <li>To configure and operate the Service in accordance with Your preferences;</li>
+      <li>To present transfer history to You within the App's user interface;</li>
+      <li>To enforce optional HTTP Basic Authentication that You have configured;</li>
+      <li>To display a foreground-service notification while the Service is running, as required by Android.</li>
+    </ul>
+
+    <h2 id="s6"><span class="num">6.</span>Legal Bases</h2>
+    <p>
+      To the extent applicable data-protection laws (including but not limited to the General Data
+      Protection Regulation of the European Union, Regulation (EU) 2016/679) require identification
+      of a legal basis for processing, the legal basis on which the App processes the information
+      described in Section 3 is the User's voluntary act of installing the App, configuring it, and
+      starting the Service. No data is shared with the Developer; the Developer acts neither as a
+      "controller" nor as a "processor" of Your Personal Data within the meaning of such laws.
+    </p>
+
+    <h2 id="s7"><span class="num">7.</span>Disclosure to Third Parties</h2>
+    <p>
+      The App does not disclose any information to any Third Party. The App does not embed or call
+      any Third-Party advertising network, analytics provider, cloud back-end, telemetry endpoint,
+      or content-delivery network at runtime. The only network communication the App initiates or
+      accepts is HTTP traffic between Your Device and other devices on Your Local Network that You
+      voluntarily allow to connect.
+    </p>
+
+    <h2 id="s8"><span class="num">8.</span>Data Retention and Deletion</h2>
+    <p>
+      Configuration data and transfer history are retained on Your Device for as long as the App is
+      installed and You have not cleared them. You may delete all such data at any time by one or
+      more of the following actions: (a) using the "Clear All" button on the Transfers screen;
+      (b) using Android's "Clear data" function for the App via system Settings; or (c) uninstalling
+      the App. Uninstalling the App removes the App's private files directory in its entirety.
+    </p>
+
+    <h2 id="s9"><span class="num">9.</span>Your Rights</h2>
+    <p>
+      Because the App does not transmit Personal Data to the Developer, the Developer holds no
+      User Personal Data with respect to which You could exercise rights of access, rectification,
+      erasure, restriction, portability, or objection. You retain full and exclusive control over
+      all data processed by the App by virtue of its residing entirely on Your Device. Should
+      applicable law nevertheless entitle You to make such a request to the Developer, the
+      Developer will respond in good faith within a reasonable time.
+    </p>
+
+    <h2 id="s10"><span class="num">10.</span>Android Permissions</h2>
+    <p>
+      The App declares only the Android permissions strictly necessary to provide the Service.
+      Each permission, its identifier, and its purpose is described below.
+    </p>
+    <ul>
+      <li><span class="mono">INTERNET</span> — Required to bind a server socket on the Device. The App does not initiate outbound connections to remote hosts.</li>
+      <li><span class="mono">ACCESS_WIFI_STATE</span> &amp; <span class="mono">ACCESS_NETWORK_STATE</span> — Required to obtain the Device's IP address on the Local Network and to detect network-change events so that the Service may terminate cleanly when the Local Network becomes unavailable.</li>
+      <li><span class="mono">CHANGE_WIFI_STATE</span> — Required to hold a Wi-Fi performance lock while the Service is running, so that the radio remains active during transfers.</li>
+      <li><span class="mono">WAKE_LOCK</span> — Required to prevent the Device's CPU from suspending while the Service is actively serving requests.</li>
+      <li><span class="mono">FOREGROUND_SERVICE</span> and <span class="mono">FOREGROUND_SERVICE_DATA_SYNC</span> — Required, in accordance with the requirements of Android version 14 (API 34) and later, to operate the HTTP server as a user-initiated foreground service.</li>
+      <li><span class="mono">POST_NOTIFICATIONS</span> — Requested at runtime on Android version 13 (API 33) and later, to display the foreground-service notification. Denial does not prevent the Service from operating; only the notification will not be shown.</li>
+    </ul>
+
+    <h2 id="s11"><span class="num">11.</span>Children's Privacy</h2>
+    <p>
+      The App is a general-purpose utility intended for adult users. It is not directed at children
+      under the age of thirteen (13), and the Developer does not knowingly collect any information
+      from children. Because the App does not collect any User information at all (see Section 4),
+      this position is structural rather than merely declaratory.
+    </p>
+
+    <h2 id="s12"><span class="num">12.</span>Security</h2>
+    <p>
+      The Service transmits HTTP traffic in cleartext over the Local Network and does not implement
+      Transport Layer Security (TLS) for that traffic. The App is intended for use on networks the
+      User trusts (for example, a private home or office Wi-Fi network). The User should not operate
+      the Service on public, untrusted, or shared networks. Optional HTTP Basic Authentication is
+      provided as a convenience and is itself transmitted in cleartext over the Local Network; it
+      should not be relied upon as a substitute for network-level security. The Developer makes no
+      representation or warranty as to the security of the Local Network or of any third device that
+      You permit to connect to the Service.
+    </p>
+
+    <h2 id="s13"><span class="num">13.</span>Open-Source Notice</h2>
+    <p>
+      The App is distributed as open-source software. The complete source code, including all network,
+      storage, and configuration logic, is publicly available at
+      <a href="https://github.com/rafiibrahim8/android-wifi-fileserver">https://github.com/rafiibrahim8/android-wifi-fileserver</a>.
+      Users and independent reviewers may verify the representations made in this Policy by
+      inspecting that source code. The applicable open-source licence terms, if any, are set out
+      in the <span class="mono">LICENSE</span> file of that repository and are independent of this Policy.
+    </p>
+
+    <h2 id="s14"><span class="num">14.</span>Changes to This Policy</h2>
+    <p>
+      The Developer may update this Policy from time to time to reflect changes in the App, in
+      applicable law, or in operational practices. The current version of the Policy will always be
+      available at the URL at which You are reading this document. The "Effective Date" and "Last
+      Updated" fields at the top of this Policy will indicate when the Policy was most recently
+      revised. Material changes will be reflected in an incremented version number. Your continued
+      use of the App following any revision constitutes Your acceptance of the revised Policy.
+    </p>
+
+    <h2 id="s15"><span class="num">15.</span>Governing Law and Severability</h2>
+    <p>
+      This Policy and any dispute or claim arising out of or in connection with it shall be governed
+      by and construed in accordance with the laws of the People's Republic of Bangladesh, without
+      regard to its conflict-of-laws principles. If any provision of this Policy is held to be invalid,
+      illegal, or unenforceable by a court of competent jurisdiction, that provision shall be
+      severed and the remainder of the Policy shall continue in full force and effect.
+    </p>
+
+    <h2 id="s16"><span class="num">16.</span>Contact</h2>
+    <p>
+      Questions, comments, or requests concerning this Policy may be directed to the Developer at
+      <a href="mailto:me@ibrahimrafi.me">me@ibrahimrafi.me</a>.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <div>© <span id="year"></span> Ibrahim Rafi. WiFi File Server is free and open source.</div>
+    <div class="footer-links">
+      <a href="index.html">App</a>
+      <a href="https://github.com/rafiibrahim8/android-wifi-fileserver">Source</a>
+      <a href="https://ibrahimrafi.me/">About me</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
